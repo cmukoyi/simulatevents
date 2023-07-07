@@ -1,0 +1,15 @@
+import "EventHeaderProto.proto";
+
+// Main Power Low
+message MainPowerLow {
+	required EventHeader header = 1;
+
+	// Duration in seconds
+	optional uint32 duration_seconds = 2;
+	
+	// Threshold value in volts. 0..25.5
+	optional float threshold_volts = 3;
+
+	// Value in volts. 0..25.5
+	optional float value_volts = 4;
+}

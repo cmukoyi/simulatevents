@@ -1,0 +1,5 @@
+// The source of driver fatigue detection
+enum DriverFatigueSourceType {
+	// Speed monitoring
+	DRIVER_FATIGUE_SOURCE_SPEED_MONITORING  = 0;
+}

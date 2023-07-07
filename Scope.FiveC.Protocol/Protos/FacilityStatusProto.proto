@@ -1,0 +1,30 @@
+import "EventHeaderProto.proto";
+
+// Facility Status event
+message FacilityStatus {
+   required EventHeader header = 1;
+
+   // Engine revolutions per minute (r/min). 0..25500. Precision: 100
+   optional uint32 rpm = 2;
+
+   // Remaining fuel level percentage. 0...100. Precision: 0.1
+   optional float fuel_level_percentage = 3;
+
+   // Voltage (V). 0..25.5. Precision 0.1
+   optional float voltage = 4;
+
+   // Flow meter
+   optional uint32 flow_meter = 5;
+
+   // Temperature sensor 1 (in degrees Celsius). -50..150. Precision: 0.0001
+   optional float temperature_1 = 6;
+
+   // Temperature sensor 2 (in degrees Celsius). -50..150. Precision: 0.0001
+   optional float temperature_2 = 7;
+
+   // Analog sensor 1. 0..65535
+   optional uint32 analog_1 = 8;
+
+   // Analog sensor 2. 0..65535
+   optional uint32 analog_2 = 9;
+}

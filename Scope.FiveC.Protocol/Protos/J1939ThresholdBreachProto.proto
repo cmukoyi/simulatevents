@@ -1,0 +1,30 @@
+import "EventHeaderProto.proto";
+
+// J1939 Threshold Breach
+message J1939ThresholdBreach {
+	required EventHeader header = 1;
+
+	// Parameter group number
+	optional uint32 parameter_group_number = 2;
+
+	// Suspect parameter number. Refer to J1939 Parameters
+	optional uint32 suspect_parameter_number = 3;
+
+	// Current measured value
+	optional uint32 current_measured_value = 4;
+	
+	// Threshold that has been breached
+	optional uint32 threshold = 5;
+
+	// Most extreme value that has been recorded for the current trip. If this field is less than the Threshold then the breach was a minimum
+	optional uint32 minimum_or_maximum = 6;
+
+	// Vehicle odometer
+	optional uint32 total_odometer = 7;
+
+	// Distance into trip
+	optional uint32 trip_odometer = 8;
+
+	// Trip duration
+	optional uint32 trip_time = 9;
+}

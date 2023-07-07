@@ -1,0 +1,15 @@
+import "EventHeaderProto.proto";
+
+// Driver Registered event
+message DriverRegistered {
+	required EventHeader header = 1;
+
+	// Fleet code
+	optional uint32 fleet_code = 2;
+
+	// Vehicle class
+	optional uint32 vehicle_class = 3;
+
+	// DriverId
+	optional uint64 driver_id = 4;
+}

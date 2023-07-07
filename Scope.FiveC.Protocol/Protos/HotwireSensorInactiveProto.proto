@@ -1,0 +1,6 @@
+import "EventHeaderProto.proto";
+
+// Hot-wire Sensor Inactive
+message HotwireSensorInactive {
+   required EventHeader header = 1;
+}

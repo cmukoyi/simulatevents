@@ -1,0 +1,13 @@
+import "EventHeaderProto.proto";
+import "Enums/VehicleVINReasonProto.proto";
+
+// Vehicle VIN event
+message VehicleVIN {
+   required EventHeader header = 1;
+
+   // Reason for event. See VehicleVINReason enum values.
+   optional VehicleVINReason reason = 2 [default = VEHICLE_REASON_VIN_CHANGED];
+
+   // Vehicle identification number (VIN)
+   optional string vin = 3;
+}

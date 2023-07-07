@@ -1,0 +1,27 @@
+import "EventHeaderProto.proto";
+
+// Detailed information about accident - sent in regular intervals before and/or after Accident event.
+message AccidentLog {
+   required EventHeader header = 1;
+
+   // Engine revolutions per minute (r/min). Precision: 100
+   optional uint32 rpm = 2;
+
+   // Distance from the start of the trip (as specified by TripStartup event) till the accident (meters).
+   optional uint32 trip_distance = 3;
+
+   // Accelerometer reading on X axis. G units. Precision: 0.01
+   optional float accelerometer_x = 4;
+
+   // Accelerometer reading on Y axis. G units. Precision: 0.01
+   optional float accelerometer_y = 5;
+
+   // Accelerometer reading on Z axis. G units. Precision: 0.01
+   optional float accelerometer_z = 6;
+
+   // Index that joins together the actual Accident event with all its AccidentLog events.
+   optional uint32 accident_recon_index = 7;
+
+   // Altitude in meters
+   optional uint32 altitude = 8;
+}

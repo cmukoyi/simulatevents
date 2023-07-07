@@ -1,0 +1,15 @@
+import "EventHeaderProto.proto";
+
+// RFID Information
+message RFIDInformation {
+	required EventHeader header = 1;
+
+	// RFID value
+	optional uint64 rfid_value = 2;
+
+	// Extended RFID value
+	optional uint64 rfid_extended_value = 3;
+
+	// RFID type
+	optional uint32 rfid_type = 4;
+}

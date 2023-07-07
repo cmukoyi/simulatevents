@@ -1,0 +1,24 @@
+import "EventHeaderProto.proto";
+
+// Daily geofence summary
+message DailyGeofenceSummary {
+   required EventHeader header = 1;
+
+   // Geofence type 1 entries
+   optional uint32 geofence_type1_entries = 2;
+
+   // Geofence type 1 time (seconds)
+   optional uint32 geofence_type1_time = 3;
+
+   // Geofence type 1 distance (meters)
+   optional uint32 geofence_type1_distance = 4;
+
+   // Geofence type 2 entries
+   optional uint32 geofence_type2_entries = 5;
+
+   // Geofence type 2 time (seconds)
+   optional uint32 geofence_type2_time = 6;
+
+   // Geofence type 2 distance (meters)
+   optional uint32 geofence_type2_distance = 7;
+}

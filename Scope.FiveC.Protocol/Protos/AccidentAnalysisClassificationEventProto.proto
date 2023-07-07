@@ -1,0 +1,46 @@
+import "EventHeaderProto.proto";
+import "Enums/AccidentAnalysisClassificationAssistanceTypeProto.proto";
+
+// Accident Analysis - Accident Classification event
+message AccidentAnalysisClassificationEvent {
+	required EventHeader header = 1;
+
+	// Current accelerometer X-Axis
+	optional float current_accelerometer_x = 2;
+
+	// Current accelerometer Y-Axis
+	optional float current_accelerometer_y = 3;
+
+	// Current accelerometer Z-Axis
+	optional float current_accelerometer_z = 4;
+
+	// Accident classification number
+	optional uint32 accident_classification_number = 5;
+
+	// Total number of impacts
+	optional uint32 total_number_of_impacts = 6;
+
+	// Number of low impacts
+	optional uint32 number_of_low_impacts = 7;
+
+	// Number of high impacts
+	optional uint32 number_of_high_impacts = 8;
+
+	// Number of frontal impacts
+	optional uint32 number_of_frontal_impacts = 9;
+
+	// Number of rear impacts
+	optional uint32 number_of_rear_impacts = 10;
+
+	// Number of side impacts
+	optional uint32 number_of_side_impacts = 11;
+
+	// Number of corner impacts
+	optional uint32 number_of_corner_impacts = 12;
+
+	// Stationary time in seconds
+	optional uint32 stationary_time_seconds = 13;
+
+	// Assistance type (0 - nothing, 1 - call, 2-ambulance)
+	optional AccidentAnalysisClassificationAssistanceType AssistanceType = 14 [default = ACCIDENT_ANALYSIS_CLASSIFICATION_ASSISTANCE_NOTHING];
+}

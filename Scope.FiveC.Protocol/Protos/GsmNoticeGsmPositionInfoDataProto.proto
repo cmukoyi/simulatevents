@@ -1,0 +1,8 @@
+// GSM notice GSM Position Info Data
+message GsmNoticeGsmPositionInfoData {
+
+	// First 12 characters of the GSM positioning server lookup response.
+	// Note that this event is to indicate that a successful lookup was perfromed.
+	// The data is not used outside of the Mhub.
+   optional bytes data = 1;
+}

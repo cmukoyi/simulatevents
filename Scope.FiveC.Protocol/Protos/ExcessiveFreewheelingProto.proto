@@ -1,0 +1,15 @@
+import "EventHeaderProto.proto";
+
+// Excessive Freewheeling event
+message ExcessiveFreewheeling {
+	required EventHeader header = 1;
+
+	// RPM
+	optional uint32 rpm = 2;
+
+	// Duration in seconds
+	optional uint32 durationSeconds = 3;
+
+	// Distance in meters
+	optional uint32 distanceMeters = 4;
+}

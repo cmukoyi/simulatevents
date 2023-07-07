@@ -1,0 +1,30 @@
+import "EventHeaderProto.proto";
+
+// J1939 Delta Parameter Update
+message J1939DeltaParameterUpdate {
+	required EventHeader header = 1;
+
+	// Parameter group number
+	optional uint32 parameter_group_number = 2;
+
+	// Suspect parameter number. Refer to J1939 Parameters
+	optional uint32 suspect_parameter_number = 3;
+
+	// Current measured value
+	optional uint32 current_measured_value = 4;
+	
+	// Previous valid value that was received 
+	optional uint32 previous_value = 5;
+
+	// Configured interval that has been exceeded
+	optional uint32 interval = 6;
+
+	// Vehicle odometer
+	optional uint32 total_odometer = 7;
+
+	// Distance into trip
+	optional uint32 trip_odometer = 8;
+
+	// Trip duration
+	optional uint32 trip_time = 9;
+}

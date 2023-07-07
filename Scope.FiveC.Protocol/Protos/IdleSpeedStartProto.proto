@@ -1,0 +1,6 @@
+import "EventHeaderProto.proto";
+
+// Idle Speed Start
+message IdleSpeedStart {
+   required EventHeader header = 1;   
+}

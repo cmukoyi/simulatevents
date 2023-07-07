@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventSending", "EventSending\EventSending.csproj", "{2C408815-BAE8-4162-8A0D-A3102F183695}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandReceiving", "CommandReceiving\CommandReceiving.csproj", "{EB69D07B-9A3E-4E53-9BAB-E5313BA2FB6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThirdPartyGatewayApi", "ThirdPartyGatewayApi\ThirdPartyGatewayApi.csproj", "{96201F47-F8E2-404E-ADA1-9813C1EEC7EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventSerializationTestApp", "EventSerializationTestApp\EventSerializationTestApp.csproj", "{4EDE941A-DCB9-4371-8892-D7B5EC9C92B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scope.FiveC.Protocol", "Scope.FiveC.Protocol\Scope.FiveC.Protocol.csproj", "{01B9324C-706E-49DE-A717-41B5CB4C8472}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{4DD7AA2C-9096-4B07-BD72-05E1079A9F9B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{20EE779F-FE5D-44B5-89F2-4BAA14E80520}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+		SharedAssemblyInfo.cs = SharedAssemblyInfo.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C408815-BAE8-4162-8A0D-A3102F183695}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C408815-BAE8-4162-8A0D-A3102F183695}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C408815-BAE8-4162-8A0D-A3102F183695}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C408815-BAE8-4162-8A0D-A3102F183695}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB69D07B-9A3E-4E53-9BAB-E5313BA2FB6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB69D07B-9A3E-4E53-9BAB-E5313BA2FB6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB69D07B-9A3E-4E53-9BAB-E5313BA2FB6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB69D07B-9A3E-4E53-9BAB-E5313BA2FB6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96201F47-F8E2-404E-ADA1-9813C1EEC7EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96201F47-F8E2-404E-ADA1-9813C1EEC7EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96201F47-F8E2-404E-ADA1-9813C1EEC7EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96201F47-F8E2-404E-ADA1-9813C1EEC7EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EDE941A-DCB9-4371-8892-D7B5EC9C92B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EDE941A-DCB9-4371-8892-D7B5EC9C92B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EDE941A-DCB9-4371-8892-D7B5EC9C92B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EDE941A-DCB9-4371-8892-D7B5EC9C92B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01B9324C-706E-49DE-A717-41B5CB4C8472}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01B9324C-706E-49DE-A717-41B5CB4C8472}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01B9324C-706E-49DE-A717-41B5CB4C8472}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01B9324C-706E-49DE-A717-41B5CB4C8472}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DD7AA2C-9096-4B07-BD72-05E1079A9F9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DD7AA2C-9096-4B07-BD72-05E1079A9F9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DD7AA2C-9096-4B07-BD72-05E1079A9F9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DD7AA2C-9096-4B07-BD72-05E1079A9F9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

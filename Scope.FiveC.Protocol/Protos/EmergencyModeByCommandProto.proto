@@ -1,0 +1,6 @@
+import "EventHeaderProto.proto";
+
+// Emergency Mode By Command
+message EmergencyModeByCommand {
+   required EventHeader header = 1;
+}

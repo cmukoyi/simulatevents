@@ -1,0 +1,12 @@
+import "EventHeaderProto.proto";
+
+// Vehicle Disablement
+message VehicleDisablement {
+   required EventHeader header = 1;
+
+   // Specifies whether vehicle is enabled. True if vehicle is enabled, false if disabled.
+   optional bool vehicle_enabled = 2;
+
+   // Engine revolutions per minute (r/min). Precision: 100
+   optional uint32 rpm = 3;
+}

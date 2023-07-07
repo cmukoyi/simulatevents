@@ -1,0 +1,9 @@
+import "EventHeaderProto.proto";
+
+// Cellocator Transmission Reason: 11, 252
+message NonTripPosition {
+   required EventHeader header = 1;
+
+   // Number of SMS messages sent
+   optional uint32 sms_count = 2;
+}

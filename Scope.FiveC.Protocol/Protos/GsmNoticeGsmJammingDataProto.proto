@@ -1,0 +1,17 @@
+import "Enums/GsmNoticeGsmJammingStatusTypeProto.proto";
+
+// GSM notice GSM Jamming Data
+message GsmNoticeGsmJammingData {
+
+   // Jamming status.
+   optional uint32 jamming_status = 1;
+
+   // Configured Noise Power Level
+   optional uint32 configured_noise_power_level = 2;
+
+   // Configured Minimum Jammed Channel
+   optional uint32 configured_minimum_jammed_channel = 3;
+
+   // Configured Jamming detect notification level.
+   optional uint32 configured_jamming_detect_notification_level = 4;
+}

@@ -1,0 +1,6 @@
+import "EventHeaderProto.proto";
+
+// Cellocator Transmission Reason: 70
+message DistressButtonActive {
+   required EventHeader header = 1;
+}

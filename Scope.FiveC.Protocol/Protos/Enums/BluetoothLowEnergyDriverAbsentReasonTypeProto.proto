@@ -1,0 +1,11 @@
+// The reason why BluetoothLowEnergyDriverAbsent event is being sent
+enum BluetoothLowEnergyDriverAbsentReasonType {
+	// Undefined
+	BLUETOOTH_LOW_ENERGY_DRIVER_ABSENT_REASON_UNDEFINED = 0;
+
+	// Driver absent during trip
+	BLUETOOTH_LOW_ENERGY_DRIVER_ABSENT_REASON_DRIVER_ABSENT_DURING_TRIP = 1;
+
+	// Driver canceled detection
+	BLUETOOTH_LOW_ENERGY_DRIVER_ABSENT_REASON_DRIVER_CANCELLED_DETECTION = 2;
+}

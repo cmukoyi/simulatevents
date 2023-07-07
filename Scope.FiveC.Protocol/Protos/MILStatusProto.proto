@@ -1,0 +1,48 @@
+import "EventHeaderProto.proto";
+
+// Malfunction indicator lamp (MIL) status
+message MILStatus {
+   required EventHeader header = 1;
+
+   // Number of DTCs in message
+   optional uint32 dtc_count = 2;
+
+   // Diagnostic trouble code (DTC) 1
+   optional uint32 dtc1 = 3;
+
+   // Diagnostic trouble code (DTC) 2
+   optional uint32 dtc2 = 4;
+
+   // Diagnostic trouble code (DTC) 3
+   optional uint32 dtc3 = 5;
+
+   // Diagnostic trouble code (DTC) 4
+   optional uint32 dtc4 = 6;
+
+   // Diagnostic trouble code (DTC) 5
+   optional uint32 dtc5 = 7;
+
+   // Diagnostic trouble code (DTC) 6
+   optional uint32 dtc6 = 8;
+
+   // Diagnostic trouble code (DTC) 7
+   optional uint32 dtc7 = 9;
+
+   // Diagnostic trouble code (DTC) 8
+   optional uint32 dtc8 = 10;
+
+   // Diagnostic trouble code (DTC) 9
+   optional uint32 dtc9 = 11;
+
+   // Diagnostic trouble code (DTC) 10
+   optional uint32 dtc10 = 12;
+
+   // Diagnostic trouble code (DTC) 11
+   optional uint32 dtc11 = 13;
+
+   // Diagnostic trouble code (DTC) 12
+   optional uint32 dtc12 = 14;
+
+   // Diagnostic trouble code (DTC) 13
+   optional uint32 dtc13 = 15;
+}

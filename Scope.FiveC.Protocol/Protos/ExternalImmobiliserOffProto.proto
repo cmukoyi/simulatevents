@@ -1,0 +1,6 @@
+import "EventHeaderProto.proto";
+
+// Cellocator Transmission Reason: 31, Initiative: True, Command Numerator: 0x03
+message ExternalImmobiliserOff {
+   required EventHeader header = 1;
+}

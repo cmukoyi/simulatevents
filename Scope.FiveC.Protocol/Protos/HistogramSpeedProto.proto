@@ -1,0 +1,39 @@
+import "EventHeaderProto.proto";
+
+// Histogram speed event
+message HistogramSpeed {
+   required EventHeader header = 1;
+
+   // Trip duration (seconds)
+   optional uint32 trip_duration = 2;
+
+   // Trip distance (seconds)
+   optional uint32 trip_distance = 3;
+
+   // Speed band 0 (< 0 km/h)
+   optional uint32 speed_band0 = 4;
+
+   // Speed band 1 (1 to 10 km/h)
+   optional uint32 speed_band1 = 5;
+
+   // Speed band 2 (11 to 30 km/h) 
+   optional uint32 speed_band2 = 6;
+
+   // Speed band 3 (31 to 50 km/h) 
+   optional uint32 speed_band3 = 7;
+
+   // Speed band 4 (51 to 70 km/h)
+   optional uint32 speed_band4 = 8;
+
+   // Speed band 5 (71 to 90 km/h)
+   optional uint32 speed_band5 = 9;
+
+   // Speed band 6 (91 to 110 km/h)
+   optional uint32 speed_band6 = 10;
+
+   // Speed band 7 (111 to 119 km/h)
+   optional uint32 speed_band7 = 11;
+
+   // Speed band 8 (120 to max km/h)
+   optional uint32 speed_band8 = 12;
+}

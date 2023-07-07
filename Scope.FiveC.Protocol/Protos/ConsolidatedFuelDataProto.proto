@@ -1,0 +1,59 @@
+import "EventHeaderProto.proto";
+import "Enums/ConsolidatedFuelReasonTypeProto.proto";
+import "Enums/FuelLevelSourceTypeProto.proto";
+import "Enums/FuelLevelUnitOfMeasureTypeProto.proto";
+import "Enums/FuelConsumptionSourceTypeProto.proto";
+import "Enums/FuelConsumptionUnitOfMeasureTypeProto.proto";
+
+// Consolidated fuel data
+message ConsolidatedFuelData {
+   required EventHeader header = 1;
+
+   // Reason for event being sent
+   optional ConsolidatedFuelReasonType reason = 2 [default = CONSOLIDATED_FUEL_REASON_PERIODIC];
+
+   // Fuel level source
+   optional FuelLevelSourceType fuel_level_source = 3 [default = FUEL_LEVEL_SOURCE_TYPE_NOT_CONFIGURED];
+
+   // Unit of measurement of the fuel level
+   optional FuelLevelUnitOfMeasureType fuel_level_unit_of_measure = 4 [default = FUEL_LEVEL_UNIT_OF_MEASURE_PERCENTAGE];
+
+   // Current fuel consumption source
+   optional FuelConsumptionSourceType current_fuel_consumption_source = 5 [default = FUEL_CONSUMPTION_SOURCE_TYPE_NOT_CONFIGURED];
+
+   // Unit of measurement of the current fuel consumption
+   optional FuelConsumptionUnitOfMeasureType current_fuel_consumption_unit_of_measure = 6 [default = FUEL_CONSUMPTION_UNIT_OF_MEASURE_LITERS_PER_100_KM];
+
+   // Average fuel consumption source
+   optional FuelConsumptionSourceType average_fuel_consumption_source = 7 [default = FUEL_CONSUMPTION_SOURCE_TYPE_NOT_CONFIGURED];
+   
+   // Unit of measurement of the average fuel consumption
+   optional FuelConsumptionUnitOfMeasureType average_fuel_consumption_unit_of_measure = 8 [default = FUEL_CONSUMPTION_UNIT_OF_MEASURE_LITERS_PER_100_KM];
+
+   // Remaining fuel level indicator. Precision according to fuel_level_unit_of_measure.
+   optional float fuel_level = 9;
+
+   // Current fuel consumption. Precision according to current_fuel_consumption_unit_of_measure.
+   optional float current_fuel_consumption = 10;
+
+   // Average fuel consumption. Precision according to average_fuel_consumption_unit_of_measure.
+   optional float average_fuel_consumption = 11;
+
+   // Ambient (external) temperature (in degrees Celsius). -40..215. Precision: 1
+   optional sint32 ambient_temperature = 12;
+
+   // Altitude in meters. -32768..32767. Precision: 1
+   optional int32 altitude_meters = 13;
+
+   // Trip distance in meters. Precision: 1
+   optional uint32 trip_distance_meters = 14;
+
+   // Trip duration in seconds. Precision: 1
+   optional uint32 trip_duration_seconds = 15;
+
+   // Accuracy of fuel level reading. 0..100. Precision: 1
+   optional uint32 accuracy_percentage = 16;
+
+   // Trip Id (0 - 255)
+   // optional uint32 trip_id = 17;
+}

@@ -1,0 +1,15 @@
+import "EventHeaderProto.proto";
+
+// Harsh Braking event
+message HarshBraking {
+	required EventHeader header = 1;
+
+	// Braking (negative acceleration) limit in km/h/s
+	optional uint32 braking_limit = 2;
+
+	// Maximum braking (negative acceleration) in km/h/s
+	optional uint32 maximum_braking = 3;
+
+	// Duration in seconds
+	optional uint32 duration_seconds = 4;
+}

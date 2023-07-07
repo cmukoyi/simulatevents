@@ -1,0 +1,18 @@
+import "EventHeaderProto.proto";
+
+// Pulse Count
+message PulseCount {
+   required EventHeader header = 1;
+
+   optional uint32 input_1_count = 2;
+
+   optional uint32 input_2_count = 3;
+
+   optional uint32 input_3_count = 4;
+
+   optional uint32 input_4_count = 5;
+
+   optional uint32 absolute_difference_between_1_and_2 = 6;
+
+   optional uint32 absolute_difference_between_3_and_4 = 7;
+}

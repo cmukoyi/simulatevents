@@ -1,0 +1,78 @@
+import "EventHeaderProto.proto";
+
+// Tachometer and speedometer values analysis during the trip
+message TripAnalysis {
+   required EventHeader header = 1;
+
+   // Percentage (0..100) of the trip time when RPM was less then 800
+   optional uint32 rpm_band1 = 2;
+
+   // Percentage (0..100) of the trip time when RPM was between 800 (including) and 1200
+   optional uint32 rpm_band2 = 3;
+
+   // Percentage (0..100) of the trip time when RPM was between 1200 (including) and 1600
+   optional uint32 rpm_band3 = 4;
+
+   // Percentage (0..100) of the trip time when RPM was between 1600 (including) and 2000
+   optional uint32 rpm_band4 = 5;
+
+   // Percentage (0..100) of the trip time when RPM was between 2000 (including) and 2400
+   optional uint32 rpm_band5 = 6;
+
+   // Percentage (0..100) of the trip time when RPM was between 2400 (including) and 2800
+   optional uint32 rpm_band6 = 7;
+
+   // Percentage (0..100) of the trip time when RPM was between 2800 (including) and 3200
+   optional uint32 rpm_band7 = 8;
+
+   // Percentage (0..100) of the trip time when RPM was between 3200 (including) and 3600
+   optional uint32 rpm_band8 = 9;
+
+   // Percentage (0..100) of the trip time when RPM was higher or equal 3600
+   optional uint32 rpm_band9 = 10;
+
+   // Percentage (0..100) of the trip time when speed was less then 10 km/h
+   optional uint32 speed_band1 = 11;
+
+   // Percentage (0..100) of the trip time when speed was between 10 (including) and 30 km/h 
+   optional uint32 speed_band2 = 12;
+
+   // Percentage (0..100) of the trip time when speed was between 30 (including) and 50 km/h
+   optional uint32 speed_band3 = 13;
+
+   // Percentage (0..100) of the trip time when speed was between 50 (including) and 70 km/h
+   optional uint32 speed_band4 = 14;
+
+   // Percentage (0..100) of the trip time when speed was between 70 (including) and 90 km/h
+   optional uint32 speed_band5 = 15;
+
+   // Percentage (0..100) of the trip time when speed was between 90 (including) and 110 km/h
+   optional uint32 speed_band6 = 16;
+
+   // Percentage (0..100) of the trip time when speed was between 110 (including) and 130 km/h
+   optional uint32 speed_band7 = 17;
+
+   // Percentage (0..100) of the trip time when speed was between 130 (including) and 140 km/h
+   optional uint32 speed_band8 = 18;
+
+   // Percentage (0..100) of the trip time when speed was higher or equal 140 km/h
+   optional uint32 speed_band9 = 19;
+
+   // Percentage (0..100) of the driving time for the trip
+   optional uint32 driving_time = 20;
+
+   // Percentage (0..100) of the idle time for the trip
+   optional uint32 idle_time = 21;
+
+   // Percentage (0..100) of the power take-off (PTO) time for the trip
+   optional uint32 pto_time = 22;
+
+   // Fuel volume in liters during driving (0..65535)
+   optional uint32 driving_fuel = 23;
+
+   // Fuel volume in liters during idle time (0..65535)
+   optional uint32 idle_fuel = 24;
+
+   // Fuel volume in liters during power take-off (0..65535)
+   optional uint32 pto_fuel = 25;
+}

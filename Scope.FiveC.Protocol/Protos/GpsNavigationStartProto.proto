@@ -1,0 +1,6 @@
+import "EventHeaderProto.proto";
+
+// Cellocator Transmission Reason: 33
+message GpsNavigationStart {
+   required EventHeader header = 1;
+}

@@ -1,0 +1,11 @@
+// Vehicle VIN Reason 
+enum VehicleVINReason {
+	// VIN Changed
+	VEHICLE_REASON_VIN_CHANGED = 0;
+
+	// VIN not available on OBD2
+	VEHICLE_REASON_VIN_NOT_AVAILABLE = 1;
+
+	// Vehicle OBD2 not available
+	VEHICLE_REASON_OBD2_NOT_AVAILABLE = 2;
+}

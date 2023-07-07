@@ -1,0 +1,9 @@
+import "EventHeaderProto.proto";
+
+// Geofence Programming Complete
+message GeofenceProgrammingComplete {
+   required EventHeader header = 1;
+
+   // A reference to geofence upload request. 0..65535
+   optional uint32 upload_token = 2;
+}

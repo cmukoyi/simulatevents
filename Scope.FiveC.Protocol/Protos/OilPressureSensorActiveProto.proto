@@ -1,0 +1,6 @@
+import "EventHeaderProto.proto";
+
+// Oil Pressure Sensor Active
+message OilPressureSensorActive {
+   required EventHeader header = 1;
+}

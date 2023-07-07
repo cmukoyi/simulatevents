@@ -1,0 +1,9 @@
+import "EventHeaderProto.proto";
+
+// Start Of Speeding
+message StartOfSpeeding {
+	required EventHeader header = 1;
+
+	// Speed limit (km/h). Precision: 0
+   optional uint32 speed_limit = 2;
+}

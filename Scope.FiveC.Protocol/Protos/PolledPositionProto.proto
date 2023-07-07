@@ -1,0 +1,9 @@
+import "EventHeaderProto.proto";
+
+// Polled Position
+message PolledPosition {
+	required EventHeader header = 1;
+
+	// Trip distance in meters
+	optional uint32 trip_distance_meters = 2;
+}

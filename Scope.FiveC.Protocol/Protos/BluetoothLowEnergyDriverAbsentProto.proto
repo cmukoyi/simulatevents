@@ -1,0 +1,47 @@
+import "EventHeaderProto.proto";
+import "Enums/BluetoothLowEnergyDriverAbsentReasonTypeProto.proto";
+import "Enums/BluetoothLowEnergyDeviceClassTypeProto.proto";
+
+// Bluetooth Low Energy Tracking event
+message BluetoothLowEnergyDriverAbsent {
+	required EventHeader header = 1;
+
+	// Reason
+	optional BluetoothLowEnergyDriverAbsentReasonType reason = 2 [default = BLUETOOTH_LOW_ENERGY_DRIVER_ABSENT_REASON_UNDEFINED];
+
+	// Device IEEE ID (6 bytes)
+	optional uint64 device_id = 3;
+
+	// Device class type
+	optional BluetoothLowEnergyDeviceClassType device_class = 4 [default = BLUETOOTH_LOW_ENERGY_DEVICE_CLASS_UNDEFINED];
+
+	// Received signal strength (RSSI)
+	optional uint32 received_signal_strength = 5;
+
+	// Advertising interval in seconds
+	optional uint32 advertising_interval_seconds = 6;
+
+	// Battery level percentage 0..100
+	optional uint32 battery_level_percentage = 7;
+
+	// Accelerometer raw values (8 bytes)
+	optional uint64 accelerometer_raw_values = 8;
+	
+	// Custom Driver Identification programmed by the customer
+	optional uint32 scope_driver_id = 9;
+
+	// Fleet code of the device that determines which group of vehicles may be driven
+	optional uint32 fleet_code = 10;
+	
+	// Class of vehicle that may be driver (Customer defined)
+	optional uint32 driver_class = 11;
+	
+	// Customer Code
+	optional uint32 customer_code = 12;
+
+	// Firmware major version
+	optional uint32 firmware_major_version = 13;
+
+	// Firmware minor version
+	optional uint32 firmware_minor_version = 14;
+}

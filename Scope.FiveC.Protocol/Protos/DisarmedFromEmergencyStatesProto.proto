@@ -1,0 +1,6 @@
+import "EventHeaderProto.proto";
+
+// Disarmed From Emergency States
+message DisarmedFromEmergencyStates {
+   required EventHeader header = 1;
+}

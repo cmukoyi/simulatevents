@@ -1,0 +1,29 @@
+// [Flags] GPS status
+enum GpsStatusType {
+	// Valid
+	GPS_STATUS_VALID = 1;
+
+	// Antenna connected
+	GPS_STATUS_ANTENNA_CONNECTED = 2;
+
+	// Antenna short
+	GPS_STATUS_ANTENNA_SHORT = 4;
+
+	// Antenna power
+	GPS_STATUS_ANTENNA_POWER = 8;
+
+	// Navigation 2D GPS
+	GPS_STATUS_NAV_2D_GPS_SOLUTION = 16;
+
+	// Navigation 3D GPS
+	GPS_STATUS_NAV_3D_GPS_SOLUTION = 32;
+
+	// GPS in UTS time
+	GPS_STATUS_VALID_GPS_UTC_TIME = 64;
+
+	// Best guess GPS solution
+	GPS_STATUS_BEST_GUESS_GPS_SOLUTION = 128;
+
+	// Valid best guess
+	GPS_STATUS_VALID_BEST_GUESS = 129;
+}

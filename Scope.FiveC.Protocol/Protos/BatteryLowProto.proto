@@ -1,0 +1,18 @@
+import "EventHeaderProto.proto";
+
+// Battery Low event
+message BatteryLow {
+   required EventHeader header = 1;
+
+   // Temperature (in degrees Celsius). Precision: 1
+   optional sint32 temperature = 2;
+
+   // Voltage in volts. Precision: 1
+   optional uint32 voltage = 3;
+
+   // Number of charges
+   optional uint32 battery_age = 4;
+
+   // Remaining battery charge level in percentage. 0..100. Precision: 1
+   optional uint32 charge_level_percentage = 5;
+}

@@ -1,0 +1,6 @@
+import "EventHeaderProto.proto";
+
+// Hood Sensor Active
+message HoodSensorActive {
+   required EventHeader header = 1;
+}

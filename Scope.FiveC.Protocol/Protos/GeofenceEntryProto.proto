@@ -1,0 +1,12 @@
+import "EventHeaderProto.proto";
+
+// Cellocator Transmission Reason: 253
+message GeofenceEntry {
+   required EventHeader header = 1;
+
+   // Geo-zone index. 0..65535
+   optional uint32 reference_id = 2;
+
+   // The type of geofence (client-specific). 0..255
+   optional uint32 geofence_type = 3;
+}

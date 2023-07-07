@@ -1,0 +1,12 @@
+import "EventHeaderProto.proto";
+
+// Trip Startup
+message TripStartup {
+   required EventHeader header = 1;
+
+   // Trip identifier
+   optional uint32 trip_id = 2;
+
+   // Delay of trip startup in seconds. Precision: 1
+   optional uint32 trip_start_delay_seconds = 3;
+}

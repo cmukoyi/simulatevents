@@ -1,0 +1,15 @@
+import "EventHeaderProto.proto";
+
+// Excessive Acceleration event
+message ExcessiveAcceleration {
+	required EventHeader header = 1;
+
+	// Acceleration limit in km/h/s
+	optional uint32 acceleration_limit = 2;
+
+	// Maximum acceleration in km/h/s
+	optional uint32 maximum_acceleration = 3;
+
+	// Duration in seconds
+	optional uint32 duration_seconds = 4;
+}

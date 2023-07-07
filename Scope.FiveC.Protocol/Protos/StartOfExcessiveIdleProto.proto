@@ -1,0 +1,6 @@
+import "EventHeaderProto.proto";
+
+// Start Of Excessive Idle
+message StartOfExcessiveIdle {
+	required EventHeader header = 1;
+}

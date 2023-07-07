@@ -1,0 +1,5 @@
+import "EventHeaderProto.proto";
+
+message Recovery {
+   required EventHeader header = 1;
+}

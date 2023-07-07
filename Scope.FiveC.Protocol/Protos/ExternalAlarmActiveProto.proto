@@ -1,0 +1,6 @@
+import "EventHeaderProto.proto";
+
+// External Alarm Active event
+message ExternalAlarmActive {
+   required EventHeader header = 1;
+}

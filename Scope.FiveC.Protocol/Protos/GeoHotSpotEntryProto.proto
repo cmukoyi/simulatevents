@@ -1,0 +1,9 @@
+import "EventHeaderProto.proto";
+
+// Geo Hot Spot Entry
+message GeoHotSpotEntry {
+   required EventHeader header = 1;
+
+   // Reference id (0..65535)
+   optional uint32 reference_id = 2;
+}

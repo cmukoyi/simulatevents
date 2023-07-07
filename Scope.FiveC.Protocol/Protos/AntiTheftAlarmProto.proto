@@ -1,0 +1,6 @@
+import "EventHeaderProto.proto";
+
+// Anti Theft Alarm event
+message AntiTheftAlarm {
+   required EventHeader header = 1;
+}

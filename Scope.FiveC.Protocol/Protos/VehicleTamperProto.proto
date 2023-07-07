@@ -1,0 +1,18 @@
+import "EventHeaderProto.proto";
+
+// Vehicle Tamper
+message VehicleTamper {
+	required EventHeader header = 1;
+
+	// Tamper reason: 1 - Tow Away
+	optional uint32 tamper_reason = 2;
+
+	// G units. Precision: 0.01
+	optional float accelerometer_x = 3;
+
+	// G units. Precision: 0.01
+	optional float accelerometer_y = 4;
+
+	// G units. Precision: 0.01
+	optional float accelerometer_z = 5;
+}

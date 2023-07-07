@@ -1,0 +1,15 @@
+import "EventHeaderProto.proto";
+
+// I'm Alive event
+message ImAlive {
+   required EventHeader header = 1;
+
+   // Major software version
+   optional uint32 major_version = 2;
+
+   // Minor software version
+   optional uint32 minor_version = 3;
+
+   // Device running hours. Precision: 1
+   optional uint32 running_hours = 4;
+}

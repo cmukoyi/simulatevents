@@ -1,0 +1,27 @@
+import "EventHeaderProto.proto";
+
+// Battery Crank event
+message BatteryCrank {
+   required EventHeader header = 1;
+
+   // Voltage average before crank (V). Precision: 0.01
+   optional float voltage_average_before_crank = 2;
+
+   // Voltage minimum (V). Precision: 0.01
+   optional float voltage_minimum = 3;
+
+   // Voltage minimum duration (ms). Precision: 10
+   optional uint32 voltage_minimum_duration_milliseconds = 4;
+
+   // Voltage crank average (V). Precision: 0.01
+   optional float voltage_crank_average = 5;
+
+   // Voltage crank average duration (ms). Precision: 10
+   optional uint32 voltage_crank_average_duration_milliseconds = 6;
+
+   // Voltage post crank (V). Precision: 0.01
+   optional float voltage_post_crank = 7;
+
+   // Temperature (in degrees Celsius). Precision: 1
+   optional sint32 temperature = 8;
+}

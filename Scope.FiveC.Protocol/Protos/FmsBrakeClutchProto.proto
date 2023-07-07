@@ -1,0 +1,18 @@
+import "EventHeaderProto.proto";
+
+// FMS Brake Clutch
+message FmsBrakeClutch {
+   required EventHeader header = 1;
+
+   // Number of seconds the clutch was active. Precision 0.1
+   optional float clutch_duration_seconds = 2;
+
+   // Count of clutches
+   optional uint32 clutch_count = 3;
+
+   // Number of seconds the brakes were active. Precision 0.1
+   optional float brake_duration_seconds = 4;
+
+   // Count of brakes
+   optional uint32 brake_count = 5;
+}

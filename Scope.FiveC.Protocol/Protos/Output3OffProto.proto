@@ -1,0 +1,9 @@
+import "EventHeaderProto.proto";
+
+// Output 3 Off
+message Output3Off {
+   required EventHeader header = 1;
+
+   // Engine revolutions per minute (r/min). Precision: 100
+   optional uint32 rpm = 2;
+}

@@ -1,0 +1,13 @@
+import "EventHeaderProto.proto";
+import "Enums/OBD2ProtocolProto.proto";
+
+// Device activation event
+message DeviceActivation {
+   required EventHeader header = 1;
+
+   // Vehicle identification number
+   optional string vin = 2;
+
+   // Device signaling ODB-II protocol
+   optional OBD2Protocol obd2_protocol = 3 [default = OBD2_PROTOCOL_NOT_SUPPORTED];
+}

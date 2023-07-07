@@ -1,0 +1,14 @@
+// The reason for sending LoadSensor event
+enum LoadSensorReasonType {
+	// Unspecified
+	LOAD_SENSOR_REASON_UNSPECIFIED  = 0;
+
+	// Periodic
+	LOAD_SENSOR_REASON_PERIODIC  = 3;
+
+	// Trip end
+	LOAD_SENSOR_REASON_TRIP_END  = 4;
+
+	// Trip start
+	LOAD_SENSOR_REASON_TRIP_START  = 5;
+}

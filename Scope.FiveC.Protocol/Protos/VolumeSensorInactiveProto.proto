@@ -1,0 +1,6 @@
+import "EventHeaderProto.proto";
+
+// Volume Sensor Inactive
+message VolumeSensorInactive {
+   required EventHeader header = 1;
+}

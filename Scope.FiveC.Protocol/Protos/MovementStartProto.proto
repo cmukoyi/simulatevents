@@ -1,0 +1,6 @@
+import "EventHeaderProto.proto";
+
+// Movement Start
+message MovementStart {
+   required EventHeader header = 1;
+}

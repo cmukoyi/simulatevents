@@ -1,0 +1,11 @@
+// [Flags] Vehicle Signature - Reason Bitmask (any combination of the flags can occur)
+enum VehicleSignatureReason {
+	// General Purpose Interface Bus (GPID) changed
+	VEHICLE_SIGNATURE_REASON_GPID_CHANGED = 0x00;
+
+	// ACC changed
+	VEHICLE_SIGNATURE_REASON_ACC_CHANGED = 0x01;
+
+	// Not implemented yet
+	VEHICLE_SIGNATURE_REASON_GEAR_RATIOS_CHANGED = 0x02;
+}

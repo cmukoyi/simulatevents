@@ -1,0 +1,6 @@
+import "EventHeaderProto.proto";
+
+// Cellocator Transmission Reason: 7
+message GpsDisconnected {
+   required EventHeader header = 1;
+}

@@ -1,0 +1,56 @@
+import "EventHeaderProto.proto";
+import "Enums/BluetoothLowEnergyIOReasonTypeProto.proto";
+import "Enums/BluetoothLowEnergyDeviceClassTypeProto.proto";
+
+// Bluetooth Low Energy I/O
+message BluetoothLowEnergyIO {
+	required EventHeader header = 1;
+
+	// Reason
+	optional BluetoothLowEnergyIOReasonType reason = 2 [default = BLUETOOTH_LOW_ENERGY_IO_REASON_UNDEFINED];
+
+	// Device IEEE ID (6 bytes)
+	optional uint64 device_id = 3;
+
+	// Device class type
+	optional BluetoothLowEnergyDeviceClassType device_class = 4 [default = BLUETOOTH_LOW_ENERGY_DEVICE_CLASS_UNDEFINED];
+
+	// Received signal strength (RSSI)
+	optional uint32 received_signal_strength = 5;
+
+	// Advertising interval in seconds
+	optional uint32 advertising_interval_seconds = 6;
+
+	// Battery level percentage 0..100
+	optional uint32 battery_level_percentage = 7;
+
+	// Accelerometer raw values (8 bytes)
+	optional uint64 accelerometer_raw_values = 8;
+
+	// LED's on/off state
+	optional uint32 leds_on_state = 9;
+
+	// LED's on/off state
+	optional uint32 leds_flashing_state = 10;
+
+	// Inputs' state
+	optional uint32 inputs = 11;
+
+	// Outputs' state
+	optional uint32 outputs = 12;
+
+	// Temperature (RFE)
+	optional float temperature_degrees = 13;
+
+	// Firmware major version
+	optional uint32 firmware_major_version = 14;
+
+	// Firmware minor version
+	optional uint32 firmware_minor_version = 15;
+
+	// Extender inputs' state
+	optional uint32 extender_inputs = 16;
+
+	// Extender outputs' state
+	optional uint32 extender_outputs = 17;
+}

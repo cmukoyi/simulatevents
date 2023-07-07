@@ -1,0 +1,6 @@
+import "EventHeaderProto.proto";
+
+// Engine Activated While Armed
+message EngineActivatedWhileArmed {
+   required EventHeader header = 1;
+}

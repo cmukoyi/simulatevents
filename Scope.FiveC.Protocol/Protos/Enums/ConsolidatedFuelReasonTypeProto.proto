@@ -1,0 +1,23 @@
+// The reason why ConsolidatedFuelData event is being sent
+enum ConsolidatedFuelReasonType {
+	// Periodic
+	CONSOLIDATED_FUEL_REASON_PERIODIC  = 0;
+
+	// Trip start
+	CONSOLIDATED_FUEL_REASON_TRIP_START  = 1;
+
+	// Trip end
+	CONSOLIDATED_FUEL_REASON_TRIP_END  = 2;
+
+	// Fuel theft
+	CONSOLIDATED_FUEL_REASON_FUEL_THEFT  = 3;
+
+	// Low fuel
+	CONSOLIDATED_FUEL_REASON_LOW_FUEL  = 4;
+
+	// Polled
+	CONSOLIDATED_FUEL_REASON_POLLED  = 5;
+
+	// High consumption
+	CONSOLIDATED_FUEL_REASON_HIGH_CONSUMPTION  = 6;
+}

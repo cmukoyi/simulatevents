@@ -1,0 +1,27 @@
+import "EventHeaderProto.proto";
+
+// Accident event is raised when an impact occurs. More accident details are with a number of regular AccidentLog events.
+message Accident {
+   required EventHeader header = 1;
+
+   // Impact direction. Degrees 0..360
+   optional uint32 impact_direction = 2;
+
+   // Accelerometer reading on X axis. G units. Precision: 0.01
+   optional float accelerometer_x = 3;
+
+   // Accelerometer reading on Y axis. G units. Precision: 0.01
+   optional float accelerometer_y = 4;
+
+   // Accelerometer reading on Z axis. G units. Precision: 0.01
+   optional float accelerometer_z = 5;
+
+   // Limit of G force on X axis over which accident is recorded. G units. Precision: 1
+   optional uint32 gforcelimit_x = 6;
+
+   // Limit of G force on Y axis over which accident is recorded. G units. Precision: 1
+   optional uint32 gforcelimit_y = 7;
+
+   // Index that joins together this Accident event with all its AccidentLog events. 
+   optional uint32 accident_recon_index = 8;
+}

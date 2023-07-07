@@ -1,0 +1,18 @@
+import "EventHeaderProto.proto";
+
+// Driver Identification event
+message DriverIdentification {
+	required EventHeader header = 1;
+
+	// Type of the data
+	optional uint32 data_type = 2 [default = 0];
+
+	// Driver id
+	optional bytes driver_id = 3;
+
+	// License type
+	optional uint32 license_type = 4;
+
+	// License id
+	optional bytes license_id = 5;
+}

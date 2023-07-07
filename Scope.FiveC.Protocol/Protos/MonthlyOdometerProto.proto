@@ -1,0 +1,9 @@
+import "EventHeaderProto.proto";
+
+// Monthly Odometer
+message MonthlyOdometer {
+   required EventHeader header = 1;
+
+   // Month number (1..12)
+   optional uint32 month = 2;
+}

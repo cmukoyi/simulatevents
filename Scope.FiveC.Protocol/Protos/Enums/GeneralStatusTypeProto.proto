@@ -1,0 +1,23 @@
+// [Flags] General status
+enum GeneralStatusType {
+	// Indicates that the ignition is on
+	GENERAL_STATUS_IGNITION	= 0x00000001;
+
+	// The unit is running on battery power
+	GENERAL_STATUS_BATTERY = 0x00000002;
+
+	// GPS information available
+	GENERAL_STATUS_GPS_INFORMATION_AVAILABLE = 0x00000004;
+
+	// Input and output information available
+	GENERAL_STATUS_INPUT_OUTPUT_INFORMATION_AVAILABLE = 0x00000008;
+
+	// Specifies that the provided latitude/longitude and other GPS data was valid some time ago but is invalid now
+	GENERAL_STATUS_GPS_POSITION_INVALID = 0x00000010;
+
+	// Specifies that GPS is in valid status
+	GENERAL_STATUS_GPS_STATUS_VALID	= 0x00000020;
+
+	// Specifies that GPS antenna is connected
+	GENERAL_STATUS_GPS_ANTENNA_CONNECTED = 0x00000040;
+}

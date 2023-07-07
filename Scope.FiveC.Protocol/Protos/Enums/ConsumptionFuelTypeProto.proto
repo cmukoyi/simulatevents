@@ -1,0 +1,11 @@
+// Consumption fuel type 
+enum ConsumptionFuelType {
+	// Petrol
+	CONSUMPTION_FUEL_TYPE_PETROL = 0;
+
+	// Diesel
+	CONSUMPTION_FUEL_TYPE_DIESEL = 1;
+
+	// LP Gas
+	CONSUMPTION_FUEL_TYPE_LPGAS = 2;
+}

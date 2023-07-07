@@ -1,0 +1,18 @@
+import "EventHeaderProto.proto";
+
+// Analogue input 1 is low
+message Analog1Low {
+	required EventHeader header = 1;
+
+	// Duration in seconds
+	optional uint32 duration_seconds = 2;
+
+	// Threshold in volts
+	optional uint32 threshold_volts = 3;
+
+	// Value in volts
+	optional uint32 value_volts = 4;
+
+	// Delay in seconds
+	optional uint32 delay_seconds = 5;
+}

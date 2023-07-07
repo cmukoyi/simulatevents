@@ -1,0 +1,33 @@
+import "EventHeaderProto.proto";
+
+// J1939 Trip End Parameter Update
+message J1939TripEndParameterUpdate {
+	required EventHeader header = 1;
+
+	// Parameter group number
+	optional uint32 parameter_group_number = 2;
+
+	// Suspect parameter number. Refer to J1939 Parameters
+	optional uint32 suspect_parameter_number = 3;
+
+	// Current measured value
+	optional uint32 current_measured_value = 4;
+	
+	// Parameter group number
+	optional uint32 parameter_group_number2 = 5;
+
+	// Suspect parameter number. Refer to J1939 Parameters
+	optional uint32 suspect_parameter_number2 = 6;
+
+	// Current measured value
+	optional uint32 current_measured_value2 = 7;
+
+	// Vehicle odometer
+	optional uint32 total_odometer = 8;
+
+	// Distance into trip
+	optional uint32 trip_odometer = 9;
+
+	// Trip duration
+	optional uint32 trip_time = 10;
+}

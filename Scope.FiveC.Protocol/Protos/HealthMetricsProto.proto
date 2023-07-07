@@ -1,0 +1,57 @@
+import "EventHeaderProto.proto";
+
+// Health Metrics
+message HealthMetrics {
+   required EventHeader header = 1;
+
+   // Number of bytes transmitted
+   optional uint32 bytes_sent = 2;
+
+   // Number of bytes received
+   optional uint32 bytes_received = 3;
+
+   // Number of SMS messages sent
+   optional uint32 sms_sent = 4;
+
+   // Percentage of trips with GPS available
+   optional uint32 trip_gps_lock_percent = 5;
+
+   // Percentage of trips with OBD2 available
+   optional uint32 trip_obd2_lock_percent = 6;
+
+   // Average RSSI (received signal strength indicator) (dB). Precision: 1
+   optional uint32 average_rssi = 7;
+
+   // Average temperature (C). Precision: 1
+   optional uint32 average_temperature = 8;
+
+   // Maximum temperature (C). Precision: 1
+   optional uint32 max_temperature = 9;
+
+   // Voltage supplied by internal battery (V). Precision: 0.01
+   optional float battery_voltage = 10;
+
+   // Voltage supplied by vehicle (V). Precision: 0.1
+   optional float vehicle_voltage = 11;
+
+   // Last used internal event counter
+   optional uint32 event_index = 12;
+
+   // Number of modem reboots
+   optional uint32 modem_reboots_count = 13;
+
+   // Health metrics flags. See HealthMetricsFlags enum for details.
+   optional uint32 flags = 14;
+
+   // Number of unit reboots
+   optional uint32 unit_reboots_count = 15;
+
+   // Number of logins to server
+   optional uint32 logins_count = 16;
+   
+   // GSM RSSI (received signal strength indicator) (dB). Precision: 1
+   optional uint32 gsm_rssi = 17;
+
+   // Battery Voltage from debug information
+   optional float battery_voltage2 = 18;
+}

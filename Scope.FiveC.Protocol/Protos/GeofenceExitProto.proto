@@ -1,0 +1,17 @@
+import "EventHeaderProto.proto";
+
+// Cellocator Transmission Reason: 254
+message GeofenceExit {
+   required EventHeader header = 1;
+   // Geo-zone index. 0..65535
+   optional uint32 reference_id = 2;
+
+   // The type of geofence (client-specific). 0..255
+   optional uint32 geofence_type = 3;
+
+   // The duration of being into geofence in seconds. Precision: 1
+   optional uint32 duration_seconds = 4;
+
+   // The distance traveled inside geofence in kilometers. Precision: 1
+   optional uint32 distance_kilometers = 5;
+}

@@ -1,0 +1,12 @@
+import "EventHeaderProto.proto";
+
+// Device removal event
+message DeviceRemoval {
+   required EventHeader header = 1;
+
+    // Vehicle identification number
+   optional string vin = 2;
+
+   // Device disconnect time in seconds
+   optional uint32 disconnected_time = 3;
+}

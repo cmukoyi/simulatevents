@@ -1,0 +1,6 @@
+import "EventHeaderProto.proto";
+
+// Cellocator Transmission Reason: 65
+message ShockSensorActive {
+   required EventHeader header = 1;
+}

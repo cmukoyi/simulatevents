@@ -1,0 +1,39 @@
+import "EventHeaderProto.proto";
+
+// Engine load event generated when limit is reached
+message EngineLoad {
+   required EventHeader header = 1;
+
+   // Malfunction indicator lamp (MIL) status (0..255)
+   optional uint32 mil_status = 2;
+
+   // Engine revolutions per minute (RPM) value (0..25500)
+   optional uint32 rpm = 3;
+
+   // Percentage (0..100) of the throttle position
+   optional uint32 throttle_position = 4;
+
+   // Percentage (0..100) of the engine load value
+   optional uint32 engine_load_value = 5;
+
+   // Value limit of the engine load (0..100)
+   optional uint32 engine_load_limit = 6;
+
+   // Time limit of the engine load (0..65535)
+   optional uint32 engine_load_time_limit = 7;
+
+   // Value of the engine coolant temperature in Celsius (-40..215)
+   optional sint32 engine_coolant_temperature = 8;
+
+   // Temperature limit of the coolant temperature (0..255)
+   optional uint32 engine_coolant_temperature_limit = 9;
+
+   // Percentage (0..100) of the fuel level 
+   optional uint32 fuel_level_value = 10;
+
+   // Lowest limit of the fuel level (0..100)
+   optional uint32 fuel_level_low_limit = 11;
+
+   // Instantaneous fuel economy in km/L (0..255)
+   optional uint32 instantaneous_fuel_economy = 12;
+}

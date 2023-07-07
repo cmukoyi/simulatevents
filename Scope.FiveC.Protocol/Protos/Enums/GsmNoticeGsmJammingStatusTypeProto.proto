@@ -1,0 +1,12 @@
+// Specifies the type of GSM notice jamming status
+// Flags
+enum GsmNoticeGsmJammingStatusType {
+	// Undefined
+	GSM_NOTICE_JAMMING_STATUS_UNDEFINED = 0x00;
+
+	// Jamming Active
+	GSM_NOTICE_JAMMING_STATUS_JAMMING_ACTIVE = 0x01;
+
+	// Debounce Jamming Active
+	GSM_NOTICE_JAMMING_STATUS_DEBOUNCE_JAMMING_ACTIVE = 0x02;
+}

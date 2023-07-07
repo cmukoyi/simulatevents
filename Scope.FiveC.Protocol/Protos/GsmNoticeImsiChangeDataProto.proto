@@ -1,0 +1,6 @@
+// GSM notice IMSI change Data
+message GsmNoticeImsiChangeData {
+
+   // IMSI of the SIM that has been insered (15 digit long number or shorter)
+   optional string imsi = 1;
+}

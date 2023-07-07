@@ -1,0 +1,6 @@
+import "EventHeaderProto.proto";
+
+// Cellocator Transmission Reason: 64
+message DoorOpen {
+   required EventHeader header = 1;
+}

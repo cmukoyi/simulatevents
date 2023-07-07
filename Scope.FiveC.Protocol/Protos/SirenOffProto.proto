@@ -1,0 +1,6 @@
+import "EventHeaderProto.proto";
+
+// Cellocator Transmission Reason: 31, Initiative: True, Command Numerator: 0x00
+message SirenOff {
+   required EventHeader header = 1;
+}

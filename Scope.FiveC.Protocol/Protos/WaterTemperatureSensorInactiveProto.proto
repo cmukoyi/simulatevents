@@ -1,0 +1,6 @@
+import "EventHeaderProto.proto";
+
+// Water Temperature Sensor Inactive
+message WaterTemperatureSensorInactive {
+   required EventHeader header = 1;
+}

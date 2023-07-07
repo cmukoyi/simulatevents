@@ -1,0 +1,11 @@
+// The accident analysis classification assistance type
+enum AccidentAnalysisClassificationAssistanceType {
+	// Nothing
+	ACCIDENT_ANALYSIS_CLASSIFICATION_ASSISTANCE_NOTHING = 0;
+
+	// Call
+	ACCIDENT_ANALYSIS_CLASSIFICATION_ASSISTANCE_CALL = 1;
+
+	// Ambulance
+	ACCIDENT_ANALYSIS_CLASSIFICATION_ASSISTANCE_AMBULANCE = 2;
+}

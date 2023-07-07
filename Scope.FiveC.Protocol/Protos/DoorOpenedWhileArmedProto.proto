@@ -1,0 +1,5 @@
+import "EventHeaderProto.proto";
+
+message DoorOpenedWhileArmed {
+   required EventHeader header = 1;
+}

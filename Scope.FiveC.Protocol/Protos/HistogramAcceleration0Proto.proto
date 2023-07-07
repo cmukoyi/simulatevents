@@ -1,0 +1,66 @@
+import "EventHeaderProto.proto";
+
+// Histogram acceleration 0 event
+message HistogramAcceleration0 {
+   required EventHeader header = 1;
+
+   // Trip duration (seconds)
+   optional uint32 trip_duration = 2;
+
+   // Trip distance (seconds)
+   optional uint32 trip_distance = 3;
+
+   // Y-axis brake and acceleration buckets (%) data 0 (-2g to -0.82g)
+   optional float y_axis_data0 = 4;
+
+   // Y-axis brake and acceleration buckets (%) data 1 (-0.82g to -0.42g)
+   optional float y_axis_data1 = 5;
+
+   // Y-axis brake and acceleration buckets (%) data 2 (-0.42g to -0.22g)
+   optional float y_axis_data2 = 6;
+
+   // Y-axis brake and acceleration buckets (%) data 3 (-0.22g to -0.12g)
+   optional float y_axis_data3 = 7;
+
+   // Y-axis brake and acceleration buckets (%) data 4 (-0.12g to -0.04g)
+   optional float y_axis_data4 = 8;
+
+   // Y-axis brake and acceleration buckets (%) data 5 (-0.04g to 0.04g)
+   optional float y_axis_data5 = 9;
+
+   // Y-axis brake and acceleration buckets (%) data 6 (0.04g to 0.12g)
+   optional float y_axis_data6 = 10;
+
+   // Y-axis brake and acceleration buckets (%) data 7 (0.12g to 0.22g)
+   optional float y_axis_data7 = 11;
+
+   // Y-axis brake and acceleration buckets (%) data 8 (0.22g to 0.42g)
+   optional float y_axis_data8 = 12;
+
+   // Y-axis brake and acceleration buckets (%) data 9 (0.42g to 2g)
+   optional float y_axis_data9 = 13;
+
+   // X-axis left and right buckets (%) data10 (-2 g to  -0.6g)
+   optional float x_axis_data10 = 14;
+
+   // X-axis left and right buckets (%) data11 (-0.6g to -0.4g)
+   optional float x_axis_data11 = 15;
+
+   // X-axis left and right buckets (%) data12 (-0.4g to -0.2g)
+   optional float x_axis_data12 = 16;
+
+   // X-axis left and right buckets (%) data13 (-0.2g to 0g)
+   optional float x_axis_data13 = 17;
+
+   // X-axis left and right buckets (%) data14 (0g to 0.2g)
+   optional float x_axis_data14 = 18;
+
+   // X-axis left and right buckets (%) data15 (0.2g to 0.4g)
+   optional float x_axis_data15 = 19;
+
+   // X-axis left and right buckets (%) data16 (0.4g to 0.6g)
+   optional float x_axis_data16 = 20;
+
+   // X-axis left and right buckets (%) data17 (0.6g to 2g)
+   optional float x_axis_data17 = 21;
+}

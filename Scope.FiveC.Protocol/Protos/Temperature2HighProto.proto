@@ -1,0 +1,18 @@
+import "EventHeaderProto.proto";
+
+// Temperature 2 High
+message Temperature2High {
+	required EventHeader header = 1;
+
+	// Duration in seconds
+	optional uint32 duration_seconds = 2;
+
+	// Temperature in Celsius degrees
+	optional int32 value_degrees = 3;
+
+	// Threshold in Celsius degrees
+	optional int32 threshold_degrees = 4;
+
+	// Delay in seconds
+	optional uint32 delay_seconds = 5;
+}

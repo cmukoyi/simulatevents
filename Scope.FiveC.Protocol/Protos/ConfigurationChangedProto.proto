@@ -1,0 +1,6 @@
+import "EventHeaderProto.proto";
+
+// Configuration Changed event
+message ConfigurationChanged {
+   required EventHeader header = 1;
+}

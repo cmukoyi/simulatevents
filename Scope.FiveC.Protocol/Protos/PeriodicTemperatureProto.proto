@@ -1,0 +1,33 @@
+import "EventHeaderProto.proto";
+
+// Periodic Temperature
+message PeriodicTemperature {
+   required EventHeader header = 1;
+
+   // Temperature in Celsius. -50...205
+   optional sint32 sensor1 = 2;
+
+   // Temperature in Celsius. -50...205
+   optional sint32 sensor2 = 3;
+
+   // Temperature in Celsius. -50...205
+   optional sint32 sensor3 = 4;
+
+   // Temperature in Celsius. -50...205
+   optional sint32 sensor4 = 5;
+
+   // Sensor 1 data is valid
+   optional bool sensor1_valid = 6;
+
+   // Sensor 2 data is valid   
+   optional bool sensor2_valid = 7;
+
+   // Sensor 3 data is valid
+   optional bool sensor3_valid = 8;
+
+   // Sensor 4 data is valid
+   optional bool sensor4_valid = 9;
+
+   // Temperature status
+   optional uint32 temperature_status = 10;
+}

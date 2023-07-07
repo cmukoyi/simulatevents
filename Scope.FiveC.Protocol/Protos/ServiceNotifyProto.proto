@@ -1,0 +1,9 @@
+import "EventHeaderProto.proto";
+
+// Service Notify
+message ServiceNotify {
+   required EventHeader header = 1;
+
+   // Service odometer (m). Precision: 1
+   optional uint32 service_odometer = 2;
+}

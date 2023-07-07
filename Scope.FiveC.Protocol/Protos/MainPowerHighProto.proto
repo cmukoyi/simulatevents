@@ -1,0 +1,6 @@
+import "EventHeaderProto.proto";
+
+// Cellocator Transmission Reason: 87, 88
+message MainPowerHigh {
+   required EventHeader header = 1;
+}

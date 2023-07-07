@@ -1,0 +1,27 @@
+import "EventHeaderProto.proto";
+
+// Fuel management system (FMS) data
+message FMSData {
+   required EventHeader header = 1;
+
+   // CAN trip distance (meters)
+   optional uint32 can_trip_distance = 2;
+
+   // Fuel level (%)
+   optional uint32 fuel_level = 3;
+
+   // Total fuel (l)
+   optional uint32 total_fuel = 4;
+
+   // FMS TCO
+   optional uint32 fms_tco = 5;
+
+   // FMS axle weight 1 (kg)
+   optional uint32 fms_axle_weight1 = 6;
+
+   // FMS axle weight 2 (kg)
+   optional uint32 fms_axle_weight2 = 7;
+
+   // Total engine hours
+   optional uint32 total_engine_hours = 8;
+}

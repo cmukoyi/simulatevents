@@ -1,0 +1,6 @@
+import "EventHeaderProto.proto";
+
+// Movement Stop
+message MovementStop {
+   required EventHeader header = 1;
+}

@@ -1,0 +1,12 @@
+import "EventHeaderProto.proto";
+
+// Excessive Idle
+message ExcessiveIdle {
+	required EventHeader header = 1;
+
+	// RPM
+	optional uint32 rpm = 2;
+
+	// Duration in seconds
+	optional uint32 duration_seconds = 3;
+}

@@ -1,0 +1,12 @@
+import "EventHeaderProto.proto";
+
+// Input 8 On
+message Input8On {
+   required EventHeader header = 1;
+
+   // Duration (sec)
+   optional uint32 duration_seconds = 2;
+
+   // Delay (sec)
+   optional uint32 delay_seconds = 3;
+}

@@ -1,0 +1,49 @@
+import "EventHeaderProto.proto";
+
+// Accident Analysis - Accident Auxiliary Average Above Threshold event is the same as Accident Average Above Threshold, 
+// but occurs after the first Accident Average Above Threshold or Accident Peak Above Threshold event.
+message AccidentAnalysisAuxiliaryAverageAboveThreshold {
+	required EventHeader header = 1;
+
+	// Event duration in milliseconds
+	optional uint32 event_duration_millisceonds = 2;
+
+	// Start Speed in km/h
+	optional uint32 start_speed_kmh = 3;
+
+	// Latitude
+	optional double accident_latitude = 4;
+
+	// Longitude
+	optional double accident_longitude = 5;
+
+	// Max R acceleration in g units where g = 9.8 m/s2
+	optional float max_acceleration_r = 6;
+
+	// Average R acceleration
+	optional float average_acceleration_r = 7;
+
+	// Average X acceleration
+	optional float average_acceleration_x = 8;
+
+	// Average Y acceleration
+	optional float average_acceleration_y = 9;
+
+	// Average Z acceleration
+	optional float average_acceleration_z = 10;
+
+	// Max RPM in Revolutions per minute
+	optional uint32 max_rpm = 11;
+
+	// Max throttle % (0.4% accuracy)
+	optional float max_throttle_percentage = 12;
+
+	// Timestamp in ms
+	optional uint32 timestamp_milliseconds = 13;
+
+	// Start direction in degrees
+	optional float start_direction_degrees = 14;
+
+	// Impact direction in degrees
+	optional float impact_direction_degrees = 15;
+}

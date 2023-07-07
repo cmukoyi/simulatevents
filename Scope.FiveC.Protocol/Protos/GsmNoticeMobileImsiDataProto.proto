@@ -1,0 +1,6 @@
+// GSM notice Mobile Imsi Data
+message GsmNoticeMobileImsiData {
+
+   // IMSI of the SIM (15 digit long number or shorter)
+   optional string imsi = 1;
+}

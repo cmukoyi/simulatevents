@@ -1,0 +1,27 @@
+import "EventHeaderProto.proto";
+
+// Input Counters
+message InputCounters {
+   required EventHeader header = 1;
+
+   // Counter 1 input
+   optional uint32 input_1_count = 2;
+
+   // Counter 2 input
+   optional uint32 input_2_count = 3;
+
+   // Counter 3 input
+   optional uint32 input_3_count = 4;
+
+   // Counter 4 input
+   optional uint32 input_4_count = 5;
+
+   // Counter 5 input
+   optional uint32 input_5_count = 6;
+
+   // Counter 6 input
+   optional uint32 input_6_count = 7;
+
+   // Counter 7 input
+   optional uint32 input_7_count = 8;
+}

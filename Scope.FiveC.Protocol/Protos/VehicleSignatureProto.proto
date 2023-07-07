@@ -1,0 +1,28 @@
+import "EventHeaderProto.proto";
+import "Enums/OBD2ProtocolProto.proto";
+
+// Vehicle signature event
+message VehicleSignature {
+   required EventHeader header = 1;
+
+   // Reason for event (bitmask). Note: reason value is any of the VehicleSignatureReason enumerator items combination.
+   optional uint32 reason = 2;
+
+   // Device signaling protocol OBD-II
+   optional OBD2Protocol obd2_protocol = 3 [default = OBD2_PROTOCOL_NOT_SUPPORTED];
+
+   // GPID's as HEX string
+   optional string gpid = 4;
+
+   // Accelerometer alpha (degrees)
+   optional uint32 accelerometer_alpha = 5;
+
+   // Accelerometer beta (degrees)
+   optional uint32 accelerometer_beta = 6;
+
+   // Accelerometer gamma (degrees)
+   optional uint32 accelerometer_gamma = 7;
+
+   // Gear ratio signature as HEX string
+   optional string gear_ratio_signature = 8;
+}

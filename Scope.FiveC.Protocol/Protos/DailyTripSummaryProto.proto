@@ -1,0 +1,27 @@
+import "EventHeaderProto.proto";
+
+// Daily trip summary
+message DailyTripSummary {
+   required EventHeader header = 1;
+
+   // Total trip distance (meters)
+   optional uint32 total_trip_distance = 2;
+    
+   // Number of trips
+   optional uint32 number_of_trips = 3; 
+
+   // Total trip time (seconds)
+   optional uint32 total_trip_time = 4; 
+
+   // Time in Timeslot 1 (seconds)
+   optional uint32 time_timeslot1 = 5; 
+
+   // Time in Timeslot 2 (seconds)
+   optional uint32 time_timeslot2 = 6;
+    
+   // Maximum Speed (km/h)
+   optional uint32 maximum_speed = 7; 
+
+   // Total Speeding Time (seconds)
+   optional uint32 total_speeding_time = 8;
+}

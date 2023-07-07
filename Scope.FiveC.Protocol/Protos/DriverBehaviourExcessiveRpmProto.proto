@@ -1,0 +1,61 @@
+import "EventHeaderProto.proto";
+import "Enums/ForceDirectionTypeProto.proto";
+
+// Driver Behaviour - Excessive Rpm
+message DriverBehaviourExcessiveRpm {
+   required EventHeader header = 1;
+
+   // Latitude start (degrees). Precision: 0.0000001
+   optional double start_latitude = 2;
+
+   // Longitude start (degrees). Precision: 0.0000001
+   optional double start_longitude = 3;
+
+   // Start GPS status. Flag - see GpsStatusType enum for details.
+   optional uint32 start_gps_status = 4;
+
+   // Speed at start (km/h). Precision: 1
+   optional uint32 start_speed = 5;
+
+   // Maximum RPM (revs/min). Precision: 100
+   optional uint32 specific_maximum_rpm = 6;
+
+   // Average RPM (revs/min). Precision: 100
+   optional uint32 specific_average_rpm = 7;
+
+   // Duration (s). Precision: 0.1
+   optional float duration_seconds = 8;
+
+   // Distance (m). Precision: 1
+   optional uint32 distance_meters = 9;
+
+   // X accelerometer (g). Precision: 0.01
+   optional float accelerometer_x = 10;
+
+   // Y accelerometer (g). Precision: 0.01
+   optional float accelerometer_y = 11;
+
+   // Z accelerometer (g). Precision: 0.01
+   optional float accelerometer_z = 12;
+
+   // The direction/description of applied force. Not used currently!
+   optional uint32 force_direction = 13;
+
+   // Limit exceeded - RPM (revs/min). Precision: 100
+   optional uint32 exceeded_rpm_limit = 14;
+
+   // Maximum RPM (engine revolutions per minute) (r/min). Precision: 100
+   optional uint32 maximum_rpm = 15;
+
+   // Maximum speed (km/h). Precision: 1
+   optional uint32 maximum_speed = 16;
+
+   // Throttle Position (%). 0..100. Precision: 0.1
+   optional float throttle_position_percent = 17;
+
+   // ODB flags (bitmask)
+   optional uint32 odb_flags = 18;
+
+   // Road surface type. Not used currently!
+   optional uint32 road_surface_type = 19;
+}

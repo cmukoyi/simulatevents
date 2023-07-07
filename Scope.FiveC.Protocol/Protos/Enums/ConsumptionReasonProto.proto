@@ -1,0 +1,5 @@
+// Consumption Reason 
+enum ConsumptionReason {
+	// CO2 Trip End
+	CONSUMPTION_REASON_CO2_TRIP_END  = 1;
+}

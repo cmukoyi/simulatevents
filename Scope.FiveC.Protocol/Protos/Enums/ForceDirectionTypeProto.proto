@@ -1,0 +1,41 @@
+// The direction/description of applied force. Not used currently!
+enum ForceDirectionType {
+	// No accident
+	FORCE_DIRECTION_NO_ACCIDENT = 0;
+	
+	// Front
+	FORCE_DIRECTION_FRONT = 1;
+
+	// Front left
+	FORCE_DIRECTION_FRONT_LEFT = 2;
+
+	// Left
+	FORCE_DIRECTION_LEFT = 3;
+
+	// Rear left
+	FORCE_DIRECTION_REAR_LEFT = 4;
+
+	// Rear
+	FORCE_DIRECTION_REAR = 5;
+
+	// Rear right
+	FORCE_DIRECTION_REAR_RIGHT = 6;
+
+	// Right
+	FORCE_DIRECTION_RIGHT = 7;
+
+	// Front right
+	FORCE_DIRECTION_FRONT_RIGHT = 8;
+
+	// Upside down
+	FORCE_DIRECTION_UPSIDE_DOWN	= 9;
+
+	// Lane change
+	FORCE_DIRECTION_LANE_CHANGE = 16;
+
+	// Swerve
+	FORCE_DIRECTION_SWERVE = 17;
+
+	// Speed bump
+	FORCE_DIRECTION_SPEED_BUMP = 18;
+}

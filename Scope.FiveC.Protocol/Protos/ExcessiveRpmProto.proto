@@ -1,0 +1,15 @@
+import "EventHeaderProto.proto";
+
+// Excessive RPM
+message ExcessiveRpm {
+	required EventHeader header = 1;
+
+	// RPM limit
+	optional uint32 rpm_limit = 2;
+
+	// Maximum RPM value
+	optional uint32 maximum_rpm = 3;
+
+	// Duration in seconds
+	optional uint32 duration_seconds = 4;
+}

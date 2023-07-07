@@ -1,0 +1,8 @@
+// The reason for sending driver fatigue event
+enum DriverFatigueReasonType {
+	// Speed unspecified
+	DRIVER_FATIGUE_REASON_SPEED_UNSPECIFIED  = 0;
+
+	// Speed monitoring
+	DRIVER_FATIGUE_REASON_SPEED_MONITORING  = 1;
+}

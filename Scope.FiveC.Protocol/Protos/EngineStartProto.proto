@@ -1,0 +1,6 @@
+import "EventHeaderProto.proto";
+
+// Engine started
+message EngineStart {
+   required EventHeader header = 1;
+}

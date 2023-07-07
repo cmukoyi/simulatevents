@@ -1,0 +1,18 @@
+import "EventHeaderProto.proto";
+
+// Temperature 3 Normal
+message Temperature3Normal  {
+	required EventHeader header = 1;
+
+	// Duration in seconds
+	optional uint32 duration_seconds = 2;
+
+	// Temperature in Celsius degrees
+	optional int32 value_degrees = 3;
+
+	// High threshold in Celsius degrees
+	optional int32 high_threshold_degrees = 4;
+
+	// Low threshold in Celsius degrees
+	optional int32 low_threshold_degrees = 5;
+}

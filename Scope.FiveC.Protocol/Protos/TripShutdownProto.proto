@@ -1,0 +1,21 @@
+import "EventHeaderProto.proto";
+
+// TripS hutdown
+message TripShutdown {
+   required EventHeader header = 1;
+
+   // Trip identifier. Must match the one in TripStartup event.
+   optional uint32 trip_id = 2;
+
+   // Delay of trip startup in seconds. Precision: 1
+   optional uint32 trip_start_delay_seconds = 3;
+
+   // Percent of trip while fuel economy is in green range. 0..100. Precision: 1.
+   optional uint32 green_time_percent = 4;
+
+   // Total trip duration in seconds. Precision: 1
+   optional uint32 trip_duration_seconds = 5;
+
+   // Total trip distance (m). Precision: 1
+   optional uint32 trip_distance_meters = 6;
+}

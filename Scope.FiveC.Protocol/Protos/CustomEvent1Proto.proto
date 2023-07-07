@@ -1,0 +1,27 @@
+import "EventHeaderProto.proto";
+
+// Custom event 1
+message CustomEvent1 {
+   required EventHeader header = 1;
+
+   // Custom data field 1
+   optional uint32 data1 = 2;
+
+   // Custom data field 2
+   optional uint32 data2 = 3;
+
+   // Custom data field 3
+   optional uint32 data3 = 4;
+
+   // Custom data field 4
+   optional uint32 data4 = 5;
+
+   // Custom data field 5
+   optional uint32 data5 = 6;
+
+   // Custom data field 6
+   optional uint32 data6 = 7;
+
+   // Custom data field 7
+   optional uint32 data7 = 8;
+}

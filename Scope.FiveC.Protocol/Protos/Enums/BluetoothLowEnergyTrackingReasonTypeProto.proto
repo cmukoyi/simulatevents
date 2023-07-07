@@ -1,0 +1,11 @@
+// The reason why BluetoothLowEnergyTracking event is being sent
+enum BluetoothLowEnergyTrackingReasonType {
+	// Undefined
+	BLUETOOTH_LOW_ENERGY_TRACKING_REASON_UNDEFINED = 0;
+
+	// New device
+	BLUETOOTH_LOW_ENERGY_TRACKING_REASON_NEW_DEVICE = 1;
+
+	// Device disappeared
+	BLUETOOTH_LOW_ENERGY_TRACKING_REASON_DEVICE_DISAPPEARED = 2;
+}

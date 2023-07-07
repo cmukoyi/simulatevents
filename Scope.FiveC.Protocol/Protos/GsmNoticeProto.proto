@@ -1,0 +1,34 @@
+import "EventHeaderProto.proto";
+import "Enums/GsmNoticeTypeProto.proto";
+import "GsmNoticeImsiChangeDataProto.proto";
+import "GsmNoticeMobileNetworkDataProto.proto";
+import "GsmNoticeGsmPositionInfoDataProto.proto";
+import "GsmNoticeGsmJammingDataProto.proto";
+import "GsmNoticeMobileImsiDataProto.proto";
+
+
+// GSM notice
+message GsmNotice {
+   required EventHeader header = 1;
+
+   // GSM notice type
+   optional GsmNoticeType notice_type = 2 [default = GSM_NOTICE_UNDEFINED];
+
+   // Used only if notice_type is GSM_NOTICE_IMSI_CHANGE.
+   // IMSI change data
+   optional GsmNoticeImsiChangeData imsi_change_data = 3;
+
+   // Used only if notice_type is GSM_NOTICE_MOBILE_NETWORK_DATA.
+   // Mobile network data
+   optional GsmNoticeMobileNetworkData mobile_network_data = 4;
+   
+   // Used only if notice_type is GSM_NOTICE_GSM_POSITION_INFO.
+   // GSM position info
+   optional GsmNoticeGsmPositionInfoData gsm_position_info_data = 5;
+
+   // Used only if notice_type is GSM_NOTICE_GSM_JAMMING_DETECTED.
+   optional GsmNoticeGsmJammingData gsm_jamming_data = 6;
+
+   // Used only if notice_type is GSM_NOTICE_MOBILE_IMSI.
+   optional GsmNoticeMobileImsiData mobile_imsi_data = 7;
+}

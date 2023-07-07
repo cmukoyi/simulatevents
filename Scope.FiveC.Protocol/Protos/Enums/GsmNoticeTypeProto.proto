@@ -1,0 +1,20 @@
+// Specifies the type of GSM notice
+enum GsmNoticeType {
+	// IMSI of the SIM that has been insered
+	GSM_NOTICE_IMSI_CHANGE = 0;
+
+	// Serving and neighbouring CELL Info
+	GSM_NOTICE_MOBILE_NETWORK_DATA = 1;
+
+	// GSM Position Info (A request has been made to an external positioning server)
+	GSM_NOTICE_GSM_POSITION_INFO = 2;
+
+	// GSM Jamming Detected
+	GSM_NOTICE_GSM_JAMMING_DETECTED = 3;
+
+	// IMSI - International mobile subscriber identity
+	GSM_NOTICE_MOBILE_IMSI = 0x30;
+
+	// Undefined
+	GSM_NOTICE_UNDEFINED = 0xFF;
+}

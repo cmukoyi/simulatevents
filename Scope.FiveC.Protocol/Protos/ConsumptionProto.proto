@@ -1,0 +1,38 @@
+import "EventHeaderProto.proto";
+import "Enums/ConsumptionReasonProto.proto";
+import "Enums/ConsumptionFuelTypeProto.proto";
+
+// Consumption event
+message Consumption {
+   required EventHeader header = 1;
+
+   // Event reason (see ConsumptionReason enum)
+   optional ConsumptionReason reason = 2 [default = CONSUMPTION_REASON_CO2_TRIP_END];
+
+   // Fuel type (see ConsumptionFuelType enum)
+   optional ConsumptionFuelType fuel_type = 3 [default = CONSUMPTION_FUEL_TYPE_PETROL];
+
+   // Idle time (seconds)
+   optional uint32 idle_time = 4;
+
+   // Trip duration (seconds)
+   optional uint32 trip_duration = 5;
+
+   // Trip distance (meters)
+   optional uint32 trip_distance = 6;
+
+   // CO2 Used (grams)
+   optional uint32 co2_used = 7;
+
+   // Fuel MC1
+   optional uint32 fuel_mc1 = 8;
+
+   // Fuel idle
+   optional uint32 fuel_idle = 9;
+
+   // Number of stops 
+   optional uint32 number_of_stops = 10;
+
+   // Confidence
+   optional uint32 confidence = 11;
+}

@@ -1,0 +1,6 @@
+import "EventHeaderProto.proto";
+
+// Keypad Locked
+message KeypadLocked {
+   required EventHeader header = 1;
+}

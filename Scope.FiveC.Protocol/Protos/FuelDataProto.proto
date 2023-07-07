@@ -1,0 +1,21 @@
+import "EventHeaderProto.proto";
+
+// Fuel Data event
+message FuelData {
+   required EventHeader header = 1;
+
+   // Reason for event
+   optional uint32 reason = 2;
+
+   // Fuel level in percents. 0..100. Precision: 0.1
+   optional float fuel_level_percents = 3;
+
+   // Total fuel volume in liters
+   optional int32 total_fuel_liters = 4;
+
+   // Indicates whether fuel cap is open. 0 - fuel cap closed; 1 - fuel cap open
+   optional bool fuel_cap_open = 5;
+
+   // Percentage of the minimum fuel level. (0..100). Precision: 0.1
+   optional float minimum_fuel_level_percents = 6;
+}

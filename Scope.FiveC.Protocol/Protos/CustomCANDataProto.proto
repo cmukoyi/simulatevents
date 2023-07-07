@@ -1,0 +1,18 @@
+import "EventHeaderProto.proto";
+
+// Custom CAN Data
+message CustomCANData {
+   required EventHeader header = 1;
+   // Custom J1939 PGN 0
+   optional uint32 custom_j1939_pgn0 = 2;
+   // CAN Message 0 Byte 0-3
+   optional uint32 can_message_0_byte_0_3 = 3;
+   // CAN Message 0 Byte 4-7
+   optional uint32 can_message_0_byte_4_7 = 4;
+   // Custom J1939 PGN 1
+   optional uint32 custom_j1939_pgn1 = 5;
+   // CAN Message 1 Byte 0-3
+   optional uint32 can_message_1_byte_0_3 = 6;
+   // CAN Message 1 Byte 4-7
+   optional uint32 can_message_1_byte_4_7 = 7;   
+}

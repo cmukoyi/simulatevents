@@ -1,0 +1,26 @@
+// The reason why BluetoothLowEnergyIO event is being sent
+enum BluetoothLowEnergyIOReasonType {
+	// Undefined
+	BLUETOOTH_LOW_ENERGY_IO_REASON_UNDEFINED = 0;
+
+	// Input changed
+	BLUETOOTH_LOW_ENERGY_IO_REASON_INPUT_CHANGED = 3;
+
+	// Output changed
+	BLUETOOTH_LOW_ENERGY_IO_REASON_OUTPUT_CHANGED = 4;
+
+	// Accelerometer changed
+	BLUETOOTH_LOW_ENERGY_IO_REASON_ACCELEROMETER_CHANGED = 5;
+
+	// Movement detected
+	BLUETOOTH_LOW_ENERGY_IO_REASON_MOVEMENT_DETECTED = 6;
+
+	// Excessive shock detected
+	BLUETOOTH_LOW_ENERGY_IO_REASON_EXCESSIVE_SHOCK_DETECTED = 7;
+
+	// Fall detected 
+	BLUETOOTH_LOW_ENERGY_IO_REASON_FALL_DETECTED = 8;
+
+	// Double tap detected
+	BLUETOOTH_LOW_ENERGY_IO_REASON_DOUBLE_TAP_DETECTED = 9;
+}

@@ -1,0 +1,3 @@
+[submodule "Scope.FiveC.Protocol"]
+	path = Scope.FiveC.Protocol
+	url = https://github.com/scopetech/Scope.FiveC.Protocol.git

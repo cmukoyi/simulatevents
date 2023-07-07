@@ -1,0 +1,5 @@
+// [Flags] Helth metrics bitmask
+enum HealthMetricsFlags {
+	// Config changed
+	HEALTH_METRICS_CONFIG_CHANGED  = 0x00000001;
+}

@@ -1,0 +1,26 @@
+import "EventHeaderProto.proto";
+import "Enums/DriverFatigueSourceTypeProto.proto";
+import "Enums/DriverFatigueReasonTypeProto.proto";
+
+// Driver fatigue
+message DriverFatigue {
+   required EventHeader header = 1;
+
+   // The source of driver fatigue detection
+   optional DriverFatigueSourceType detection_source = 2 [default = DRIVER_FATIGUE_SOURCE_SPEED_MONITORING]; 
+
+   // The reason for sending driver fatigue event
+   optional DriverFatigueReasonType reason = 3 [default = DRIVER_FATIGUE_REASON_SPEED_UNSPECIFIED]; 
+
+   // Continuous moving threshold in minutes. Precision: 1
+   optional uint32 continuous_moving_threshold_minutes = 4; 
+
+   // Minimum rest threshold in minutes. Precision: 1
+   optional uint32 minimum_rest_threshold_minutes = 5; 
+
+   // Moving speed limit in km/h. Precision: 1
+   optional uint32 moving_speed_limit = 6;
+
+   // Duration over continuous moving threshold in minutes. Precision: 1
+   optional uint32 duration_over_continuous_moving_threshold_minutes = 7;
+}

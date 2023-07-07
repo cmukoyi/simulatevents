@@ -1,0 +1,33 @@
+import "EventHeaderProto.proto";
+
+// J1939 Switch State Change
+message J1939SwitchStateChange {
+	required EventHeader header = 1;
+
+	// Parameter group number
+	optional uint32 parameter_group_number = 2;
+
+	// Suspect parameter number of field that has changed. Refer to J1939-7 Parameters
+	optional uint32 suspect_parameter_number = 3;
+
+	// Current state/value of switch. Note that not all are binary. Switches can have up to 16 possible values.
+	optional uint32 current_state = 4;
+
+	// Previous state/value of the switch
+	optional uint32 previous_state = 5;
+
+	// Count of total transitions (OFF->ON->OFF == 2 transitions) from start of trip.
+	optional uint32 transition_count = 6;
+
+	// Time since last state change or 0 if there have been no state changes in the trip.
+	optional uint64 time_since_last_state_change_ms = 7;
+
+	// Vehicle odometer
+	optional uint32 total_odometer = 8;
+
+	// Distance into trip
+	optional uint32 trip_odometer = 9;
+
+	// Trip duration
+	optional uint32 trip_time = 10;
+}

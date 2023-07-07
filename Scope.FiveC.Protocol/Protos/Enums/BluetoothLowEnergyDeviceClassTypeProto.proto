@@ -1,0 +1,11 @@
+// The BluetoothLowEnergy device class
+enum BluetoothLowEnergyDeviceClassType {
+	// Undefined
+	BLUETOOTH_LOW_ENERGY_DEVICE_CLASS_UNDEFINED = 0;
+	
+	// Sensor
+	BLUETOOTH_LOW_ENERGY_DEVICE_CLASS_SENSOR = 1;
+
+	// Remote
+	BLUETOOTH_LOW_ENERGY_DEVICE_CLASS_REMOTE = 2;
+}

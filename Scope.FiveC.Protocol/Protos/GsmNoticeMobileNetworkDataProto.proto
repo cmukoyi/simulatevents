@@ -1,0 +1,57 @@
+// GSM notice mobile network data
+message GsmNoticeMobileNetworkData {
+
+   // MNC - Mobile Network Code.
+   optional uint32 mnc = 1;
+
+   // MCC - Mobile Country Code.
+   optional uint32 mcc = 2;
+
+   // SC - Serving Cell Tower. LAC - Local Area Code.
+   optional uint32 sc_lac = 3;
+
+   // SC - Serving Cell Tower. CID - Cell ID.
+   optional uint32 sc_cid = 4;
+
+   // SC - Serving Cell Tower. dBm - Received Signal Strength. -128..127. Precision: 1
+   optional sint32 sc_dbm = 5;
+
+   // SC - Serving Cell Tower. RSSI - Received Signal Strength Indicator.
+   optional uint32 sc_rssi = 6;
+
+   // NC1 - Neighbour 1 Cell Tower. LAC - Local Area Code.
+   optional uint32 nc1_lac = 7;
+
+   // NC1 - Neighbour 1 Cell Tower. CID - Cell ID.
+   optional uint32 nc1_cid = 8;
+
+   // NC1 - Neighbour 1 Cell Tower. dBm - Received Signal Strength. -128..127. Precision: 1
+   optional sint32 nc1_dbm = 9;
+
+   // NC1 - Neighbour 1 Cell Tower. RSSI - Received Signal Strength Indicator.
+   optional uint32 nc1_rssi = 10;
+
+   // NC2 - Neighbour 2 Cell Tower. LAC - Local Area Code.
+   optional uint32 nc2_lac = 11;
+
+   // NC2 - Neighbour 2 Cell Tower. CID - Cell ID.
+   optional uint32 nc2_cid = 12;
+
+   // NC2 - Neighbour 2 Cell Tower. dBm - Received Signal Strength. -128..127. Precision: 1
+   optional sint32 nc2_dbm = 13;
+
+   // NC2 - Neighbour 2 Cell Tower. RSSI - Received Signal Strength Indicator.
+   optional uint32 nc2_rssi = 14;
+
+   // NC3 - Neighbour 3 Cell Tower. LAC - Local Area Code.
+   optional uint32 nc3_lac = 15;
+
+   // NC3 - Neighbour 3 Cell Tower. CID - Cell ID.
+   optional uint32 nc3_cid = 16;
+
+   // NC3 - Neighbour 3 Cell Tower. dBm - Received Signal Strength. -128..127. Precision: 1
+   optional sint32 nc3_dbm = 17;
+
+   // NC3 - Neighbour 3 Cell Tower. RSSI - Received Signal Strength Indicator.
+   optional uint32 nc3_rssi = 18;
+}

@@ -1,0 +1,25 @@
+import "EventHeaderProto.proto";
+
+// Trip Summary
+message TripSummary {
+   required EventHeader header = 1;
+
+   // Latitude start (-90...90) in degrees. Accuracy: 0.0000001
+   optional double latitude_start = 2;
+
+   // Longitude start (-180...180) in degrees. Accuracy: 0.0000001
+   optional double longitude_start = 3;
+
+   // Trip duration in seconds
+   optional uint32 trip_duration = 4;
+
+   // Trip distance in meters
+   optional uint32 trip_distance = 5;
+
+   // Trip maximum speed (km/h)
+   optional uint32 trip_max_speed = 6;
+
+   // GPRS status start (0..255)
+   optional uint32 gprs_status_start = 7;
+}
+
